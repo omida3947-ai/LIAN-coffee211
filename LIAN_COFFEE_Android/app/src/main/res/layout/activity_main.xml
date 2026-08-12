@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layoutDirection="rtl">
+    <LinearLayout
+        android:id="@+id/root"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:src="@drawable/lian_logo"
+            android:contentDescription="LIAN COFFEE"/>
+
+        <TextView
+            android:text="مدیریت کافه LIAN"
+            android:textColor="@color/gold_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp"/>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/txtIncome" android:text="درآمد امروز\n۰ تومان" android:textColor="@color/white" android:gravity="center" android:padding="12dp" android:background="@color/dark_card" android:layout_width="0dp" android:layout_weight="1" android:layout_height="90dp"/>
+            <Space android:layout_width="10dp" android:layout_height="1dp"/>
+            <TextView android:id="@+id/txtExpense" android:text="هزینه امروز\n۰ تومان" android:textColor="@color/white" android:gravity="center" android:padding="12dp" android:background="@color/dark_card" android:layout_width="0dp" android:layout_weight="1" android:layout_height="90dp"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/txtProfit" android:text="سود / ضرر امروز: ۰ تومان" android:textColor="@color/gold_light" android:textSize="19sp" android:textStyle="bold" android:gravity="center" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnSale" android:text="ثبت فروش / درآمد" android:layout_width="match_parent" android:layout_height="55dp"/>
+        <Button android:id="@+id/btnExpense" android:text="ثبت هزینه / خروجی" android:layout_width="match_parent" android:layout_height="55dp"/>
+        <Button android:id="@+id/btnInventory" android:text="انبار و موجودی کالا" android:layout_width="match_parent" android:layout_height="55dp"/>
+        <Button android:id="@+id/btnReport" android:text="گزارش‌ها و سود و ضرر" android:layout_width="match_parent" android:layout_height="55dp"/>
+        <Button android:id="@+id/btnBackup" android:text="پشتیبان‌گیری" android:layout_width="match_parent" android:layout_height="55dp"/>
+    </LinearLayout>
+</ScrollView>
